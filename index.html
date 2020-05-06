@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Animate.css by https://daneden.me/-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <!-- CUSTOM META  -->
+  <title>Star Wars Character Data</title>
+  <link rel="icon" href="images/favicon-sw.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="images/favicon-sw.png">
+  <meta name="description" content="Star wars character data provided by https://swapi.co/">
+  <meta name="keywords" content="Star Wars, SWAPI, API, Project">
+  <meta name="author" content="Josep Janer Florit">
+</head>
+
+<body class="animated fadeIn">
+  <main>
+    <!-- HEADER SECTION STAR WARS LOGO -->
+    <header>
+      <img src="images/Starwars-logo.png" alt="Star wars logo" class="animated bounceInDown">
+    </header>
+        <!-- POWERED BY SWAPI -->
+        <div class="powered">
+          <p>Powered by <a href="https://swapi.dev/" target="_blank">SWAPI</a></p>
+        </div>
+    <div class="container">    
+      <!-- INPUT SECTION -->
+      <section class="section-input">
+        <form action="" class="search" id="form" autocomplete="off">
+          <input type="text" name="searchInput" placeholder="Search star wars character data " />
+        </form>
+      </section>
+      <!-- DATA SECTION -->
+      <div id="section">
+      </div>
+    </div>
+  </main>
+  <!-- LOADER GIF -->
+  <div class="loader" id="myLoader">
+    <img src="images/loading-gif.gif" alt="loader gif">
+  </div>
+  <!-- THEME BUTTONS -->
+  <div class="container-btn-theme">
+    <button class="btn-theme" onclick="changeTheme()"></button>
+    <button class="btn-theme theme-0" onclick="changeTheme(0)"></button>
+    <button class="btn-theme theme-1" onclick="changeTheme(1)"></button>
+    <button class="btn-theme theme-2" onclick="changeTheme(2)"></button>
+  </div>
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
+</body>
+
+</html>

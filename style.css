@@ -1,0 +1,170 @@
+/* ======================================= GENERAL ELEMEMTS ======================================= */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    background-color: rgb(54, 54, 54);
+    background-image: url("images/star-wars-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 16px;
+}
+
+main {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+section {
+    margin: 16px;
+}
+
+span {
+    color: tomato;
+}
+
+/* HEADER ELEMENTS */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 48px;
+}
+
+/* INPUT ELEMENTS */
+
+input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+/* SECTION CHAR ELEMENTS */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
+    background-color: rgba(66, 88, 163, 0.363);
+    border-radius: 10px;
+}
+
+.char-container {
+    display: flex;
+    background-color: rgb(44, 44, 44);
+    border: 1px solid gray;
+}
+
+.char-container p {
+    margin: 16px;
+}
+
+/* LOADER GIF */
+
+.loader {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+}
+
+.loader img {
+    width: 50px;
+    height: auto;
+}
+
+/* BUTTON THEME */
+
+.btn-theme {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 100%;
+    background-color: #032f60;
+}
+
+.theme-0 {
+    left: 60px;
+    background-color: #adcad8;
+    border: none;
+}
+
+.theme-1 {
+    left: 100px;
+    background-color: #c15d3b;
+    border: none;
+}
+
+.theme-2 {
+    left: 140px;
+    background-color: #55130a;
+    border: none;
+}
+
+/* POWERED BY SECTION */
+.powered {
+    text-align: center;
+}
+
+.powered a {
+    color: yellow;
+    text-decoration: none;
+}
+
+/* ======================================= MEDIA QUERIES =======================================*/
+
+@media screen and (max-width: 900px) {
+    .char-container {
+        display: block;
+    }
+
+    .loader {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .loader img {
+        width: 35px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .theme-0 {
+        left: 20px;
+        bottom: 60px;
+    }
+
+    .theme-1 {
+        left: 20px;
+        bottom: 100px;
+    }
+
+    .theme-2 {
+        left: 20px;
+        bottom: 140px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .btn-theme {
+        padding: 7.5px;
+        left: 10px;
+    }
+}
